@@ -1,0 +1,277 @@
+@font-face {
+  font-family: roboto;
+  src: url(./font/Roboto-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+body{
+	background-color:black;
+	color:white;
+  font-family: roboto;
+ 
+  
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  border: 1px solid rgb(128, 0, 0);
+  background-color: #000000;
+  color: #ffffff;
+  
+  height: 55px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #313131;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #313131;
+}
+
+.aside {
+  background-color: #313131;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #313131;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* Celulares */
+[class*="col-"] {
+  width: 100%;
+}
+.comment-post{
+display: block;
+height: 60px;
+}
+.post{
+font-size: 16px;
+padding: 5px;
+width: 80%;
+
+}
+.post-btn{
+  float:right;
+  font-size: 16px;
+  top: 0px;
+  font-size: auto;
+  width: 20%;
+  height: inherit;
+  
+    background-color: #353535;
+    border: none;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  
+  
+}
+.message {
+  margin-bottom: 15px;
+  background-color: white;
+  border-left: 1px solid gray;
+  
+}
+
+.image {
+  float: left;
+  margin-right: 10px;
+}
+
+.user {
+  float: left;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.content {
+  margin-left: 30px;
+  font-style: italic;
+  color: black;
+}
+
+.responses {
+  
+  margin-left: 30px;
+}
+.message-list{
+background-color: #ffffff;
+
+}
+@media only screen and (min-width: 768px) {
+  /* Computadores */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {
+    width: 50%;
+    
+  }
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+.col-3 menu{
+
+  overflow: auto;
+}
+/*CSS*/
+.profile{
+  float: right;
+}
+.dropbtn {
+  
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 16px;
+  top:100px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #383838;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  right: 10px;
+  top: 60px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 105px;
+  overflow: hidden;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {
+  display: block;
+}
+.message{  
+color: #000000;
+}
+.message-list{  
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 4px;
+  color: #000000;
+  }
+
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; 
+}
+
+.select-selected {
+  background-color: rgb(56, 56, 56);
+}
+
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+.select-items {
+  position: absolute;
+  background-color: rgb(59, 59, 59);
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
